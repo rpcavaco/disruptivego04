@@ -18,3 +18,16 @@
 
 @ulend
 
+---
+
+### Are you sure? In my view ...
+
+@ul[squares]
+
+- Python 2 was extremely inefficient as a multitasking platform
+- Java has excellent multitasking, I/O, etc. but uses very rigid coding strucures (Servlets, etc.), very verbose code
+- coding C++ is extremely hard 
+- ASP.NET is similar to Java and Windows platform oriented
+- PHP efficiency is not as good as you might think
+
+@ulend
