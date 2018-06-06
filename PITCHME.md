@@ -4,9 +4,9 @@
 
 ---
 
-## Why use Golang to program HTTP services?
+# Why use Golang to program HTTP services?
 
-### Other languages might be more popular and effective:
+## Other languages might be more popular and effective:
 
 @ul[squares]
 
