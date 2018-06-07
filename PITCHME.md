@@ -38,7 +38,7 @@ https://www.techempower.com/benchmarks/
 ---?image=assets/fortunes_fasthttp.png&position=bottom 50px right 100px&size=auto 45%
 
 Looking at its results (May 2017) I first saw Go as a top performing language.<br><br>
-As I’m a huge fan of PostgreSQL, fasthttp-postgresql immediately caught my attention.<br>
+As I’m a huge fan of PostgreSQL, <b>fasthttp-postgresql</b> immediately caught my attention.<br>
 <br>
 <small>First Python framework comes 46th</small><br>
 <small>First PHP at 56th place ... </small><br>
