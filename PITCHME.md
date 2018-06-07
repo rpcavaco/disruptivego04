@@ -29,9 +29,13 @@ Where should we look for it?
 
 ## Some benchmarking
 
-![Logo](assets/fortunes_fasthttp.png)
+![Logo](assets/fortunes_fasthttp.png&size=auto 90%)
 
 Techempower.com is my favorite benchmark
+
+Results available at <a href="https://www.techempower.com/benchmarks/" target="_blank">Web Framework Benchmarks</a> website
+
+---
 
 Looking at its results (May 2017) I first saw Go as a top performing language. 
 As I’m a huge fan of PostgreSQL, fasthttp-postgresql immediately caught my attention.
