@@ -20,14 +20,24 @@
 
 ---
 
-### Are you sure? In my view ...
+## Why use Golang to program HTTP services?
 
-@ul[squares]
+We may try to get something out of Python 3 or, we are just in time to give new language a try! ;)
+Where should we look for it?
 
-- Python 2 was extremely inefficient as a multitasking platform
-- Java has excellent multitasking, I/O, etc. but uses very rigid coding strucures (Servlets, etc.), very verbose code
-- coding C++ is extremely hard 
-- ASP.NET is similar to Java and Windows platform oriented
-- PHP efficiency is not as good as you might think
+---
 
-@ulend
+## Some benchmarking
+
+Techempower.com is my favorite benchmark
+
+Looking at its results (May 2017) I first saw Go as a top performing language. 
+As I’m a huge fan of PostgreSQL, fasthttp-postgresql immediately caught my attention.
+First Python framework comes 46th
+First PHP at 56th place ... 
+(In latest tests, fasthttp is not so well ...)
+
+---
+
+
+
