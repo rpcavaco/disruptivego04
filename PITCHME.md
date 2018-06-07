@@ -25,7 +25,7 @@
 We may try to get something out of Python 3 or, we are just in time to give new language a try! ;)
 Where should we look for it?
 
----?image=assets/fortunes_fasthttp.jpg
+---?image=assets/fortunes_fasthttp.png
 
 ## Some benchmarking
 
