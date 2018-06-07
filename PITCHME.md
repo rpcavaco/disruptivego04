@@ -11,8 +11,8 @@
 @ul
 
 - Python is very easy to write and maintain
+- <code>C++</code> is both robust and efficient
 - Java: extremely efficient with a solid knowledge base
-- C++ is both robust and efficient
 - ASP.NET is as good as Java
 - PHP is hugely popular and simple
 
