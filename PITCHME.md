@@ -25,15 +25,13 @@
 We may try to get something out of Python 3 or, we are just in time to give new language a try! ;)
 Where should we look for it?
 
----
+---?image=assets/fortunes_fasthttp.png&size=auto 75%
 
 ## Some benchmarking
 
-![Fortunes](assets/fortunes_fasthttp.png)
-
 Techempower.com is my favorite benchmark
 
-Results available at <a href="https://www.techempower.com/benchmarks/" target="_blank">Web Framework Benchmarks</a> website.<br>
+Results available at 
 https://www.techempower.com/benchmarks/
 
 ---
@@ -44,7 +42,7 @@ First Python framework comes 46th
 First PHP at 56th place ... 
 (In latest tests, fasthttp is not so well ...)
 
----
+
 
 
 
