@@ -26,7 +26,7 @@ We may try to get something out of Python 3 or, we are just in time to give new 
 
 <small>Where should we look for it?</small>
 
----?image=assets/fortunes_fasthttp.png&size=auto 75%
+---?image=assets/fortunes_fasthttp_light.png&size=auto 75%
 
 ## Some benchmarking
 
