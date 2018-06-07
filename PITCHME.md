@@ -29,11 +29,12 @@ Where should we look for it?
 
 ## Some benchmarking
 
-![Logo](assets/fortunes_fasthttp.png&size=auto 90%)
+![Fortunes](assets/fortunes_fasthttp.png)
 
 Techempower.com is my favorite benchmark
 
-Results available at <a href="https://www.techempower.com/benchmarks/" target="_blank">Web Framework Benchmarks</a> website
+Results available at <a href="https://www.techempower.com/benchmarks/" target="_blank">Web Framework Benchmarks</a> website.<br>
+https://www.techempower.com/benchmarks/
 
 ---
 
