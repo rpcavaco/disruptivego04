@@ -6,7 +6,7 @@
 
 ## Why use Golang to program HTTP services?
 
-### Other languages might be more popular and effective:
+### Other languages might be more popular and effective
 
 @ul
 
@@ -37,11 +37,13 @@ https://www.techempower.com/benchmarks/
 
 ---?image=assets/fortunes_fasthttp.png&position=bottom 50px right 100px&size=auto 45%
 
-Looking at its results (May 2017) I first saw Go as a top performing language. 
-As I’m a huge fan of PostgreSQL, fasthttp-postgresql immediately caught my attention.
-First Python framework comes 46th
-First PHP at 56th place ... 
-(In latest tests, fasthttp is not so well ...)
+Looking at its results (May 2017) I first saw Go as a top performing language.<br>
+As I’m a huge fan of PostgreSQL, fasthttp-postgresql immediately caught my attention.<br>
+
+- <small>first Python framework comes 46th</small>
+- <small>first PHP at 56th place ... </small>
+
+<small>(In latest tests, fasthttp is not so well ...)</small>
 
 
 
