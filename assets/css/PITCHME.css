@@ -5,3 +5,13 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+.reveal pre code {
+  font-size: 0.8em;
+  /*line-height: 1.2;*/
+}
+
+.reveal pre {
+  width: 80%;
+  margin-left: -10%;
+}
