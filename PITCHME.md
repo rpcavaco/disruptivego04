@@ -64,7 +64,7 @@ Package author states it delivers 3x to 4x better perfomance than standard net/h
 See this [Google Groups discussion](https://groups.google.com/forum/m/#!topic/golang-nuts/OaQu4QezAr0/discussion) with the author.
 
 ---
-## A little smell of **net/http**
+### A little smell of **net/http**
 
 ```go
 http.Handle("/foo", fooHandler)
@@ -79,7 +79,7 @@ log.Fatal(http.ListenAndServe(":8080", nil))
 @[7](Passing nil as second parameter, internal DefaultServeMux is used.)
 @[1-4](*Handle* and *HandleFunc* add handlers to DefaultServeMux.)
 ---
-## The 'multiplexer'
+### The 'multiplexer'
 
 ```go
 http.Handle("/foo", fooHandler)
