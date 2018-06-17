@@ -75,8 +75,21 @@ http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
-@[7](ListenAndServe initiates an HTTP server at the given address, this case localhost:8080, and 'multiplexer' function.
-Passing nil as second parameter, internal DefaultServeMux is used. *Handle* and *HandleFunc* add handlers to DefaultServeMux.)
+@[7](ListenAndServe initiates an HTTP server at the given address, this case localhost:8080, and 'multiplexer' function.)
+@[7](Passing nil as second parameter, internal DefaultServeMux is used.)
+@[1-4](*Handle* and *HandleFunc* add handlers to DefaultServeMux.)
+---
+## The 'multiplexer'
+
+```go
+http.Handle("/foo", fooHandler)
+
+http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+})
+
+log.Fatal(http.ListenAndServe(":8080", nil))
+```
 
 <small>The 'multiplexer' routes the request to a given *handler*, matching the request path with a pattern like */foo" or "/bar".</small>
 
