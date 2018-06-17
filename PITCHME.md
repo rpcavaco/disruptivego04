@@ -32,7 +32,7 @@ We may try to get something out of Python 3 or, we are just in time to give new 
 
 Techempower.com is my favorite benchmark
 
-Results available at 
+Results available at
 https://www.techempower.com/benchmarks/
 
 ---?image=assets/fortunes_fasthttp.png&position=bottom 50px right 100px&size=auto 45%
@@ -52,7 +52,7 @@ As I’m a huge fan of PostgreSQL, <b>fasthttp-postgresql</b> immediately caught
 
 - efficiency
 - simplicity
-- good straightforward JSON support out-of-the-box 
+- good straightforward JSON support out-of-the-box
 
 ---
 
@@ -60,14 +60,18 @@ As I’m a huge fan of PostgreSQL, <b>fasthttp-postgresql</b> immediately caught
 
 Fasthttp is an improvement to Go’s net/http package.
 
-Package author states it delivers 3x 4x better perfomance than standard net/http lib.
+Package author states it delivers 3x to 4x better perfomance than standard net/http lib.
 See this [Google Groups discussion](https://groups.google.com/forum/m/#!topic/golang-nuts/OaQu4QezAr0/discussion) with the author.
 
+---
+# A little smell of **net/http**
 
+```go
+http.Handle("/foo", fooHandler)
 
+http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+})
 
-
-
-
-
-
+log.Fatal(http.ListenAndServe(":8080", nil))
+```
