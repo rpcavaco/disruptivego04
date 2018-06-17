@@ -58,7 +58,11 @@ As I’m a huge fan of PostgreSQL, <b>fasthttp-postgresql</b> immediately caught
 
 ## What is fasthttp?
 
-… fasthttp is an improvement to Go’s net/http package
+Fasthttp is an improvement to Go’s net/http package.
+
+Package author states it delivers 3x 4x better perfomance than standard net/http lib.
+See this [Google Groups discussion](https://groups.google.com/forum/m/#!topic/golang-nuts/OaQu4QezAr0/discussion) with the author.
+
 
 
 
