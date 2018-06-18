@@ -78,7 +78,9 @@ log.Fatal(http.ListenAndServe(":8080", nil))
 @[7](ListenAndServe initiates an HTTP server at the given address, this case localhost:8080, and 'multiplexer' function.)
 @[7](Passing nil as second parameter, internal DefaultServeMux is used.)
 @[1-4](*Handle* and *HandleFunc* add handlers to DefaultServeMux.)
+
 ---
+
 ### The 'multiplexer'
 
 ```go
