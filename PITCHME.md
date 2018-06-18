@@ -131,9 +131,8 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"html"
 )
-
-http.Handle("/foo", fooHandler)
 
 http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
@@ -141,3 +140,11 @@ http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
+
+To run it justo do:
+
+> go build basichttp.go
+> ./basichttp
+
+---
+
