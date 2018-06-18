@@ -9,10 +9,20 @@
 In order to reproduce code examples, you should have installed on your system:
 
 - Go
+- fasthttp library from Aliaksandr Valialkin
 - Redis, an in-memory datastructure store to use as our REST API backend
 
  
- Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](https://redis.io/)
+ Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](https://redis.io/).
+ 
+ Fasthttp library available as GitHub go repository in [https://github.com/valyala/fasthttp](https://github.com/valyala/fasthttp).
+ 
+To install it, execute this command line (after Go's installation):
+
+```
+go get -u github.com/valyala/fasthttp
+```
+
 
 ---
 
@@ -108,3 +118,26 @@ log.Fatal(http.ListenAndServe(":8080", nil))
 <small>The 'multiplexer' routes the request to a given *handler*, matching the request path with a pattern like "/foo" or "/bar".</small>
 
 <small>*Handle* and *HandleFunc* are two different ways of automatically adding handler functions to the *DefaultServeMux* multiplexer</small>
+
+--- 
+
+### Building the first net/http example
+
+Let's create an empty directory (name it as you wish). Inside it create our first Go source named *basichttp.go* containing the following code:
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+http.Handle("/foo", fooHandler)
+
+http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+})
+
+log.Fatal(http.ListenAndServe(":8080", nil))
+```
