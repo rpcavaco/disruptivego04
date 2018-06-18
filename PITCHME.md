@@ -4,6 +4,17 @@
 
 ---
 
+## Requirments
+
+In order to reproduce code examples, you should have installed on your system:
+
+- Go
+- Redis, an in-memory datastructure store to use as our REST API backend
+
+ Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](https://redis.io/)
+
+---
+
 ## Why use Golang to program HTTP services?
 
 ### Other languages might be more popular and effective
@@ -76,8 +87,8 @@ http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
 @[7](ListenAndServe initiates an HTTP server at the given address, this case localhost:8080, and 'multiplexer' function.)
-@[7](Passing nil as second parameter, internal DefaultServeMux is used.)
-@[1-4](*Handle* and *HandleFunc* add handlers to DefaultServeMux.)
+@[7](Passing nil as second parameter, internal *DefaultServeMux* (not shown) is used.)
+@[1-4](*Handle* and *HandleFunc* add handlers to *DefaultServeMux*.)
 
 ---
 
