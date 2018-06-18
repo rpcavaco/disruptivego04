@@ -141,11 +141,14 @@ http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
+---
 
-<small>To run it justo do:</small>
+To run the previous code, justo do:</small>
 
+```
 > go build basichttp.go
 > ./basichttp
+```
 
 ---
 
