@@ -86,6 +86,7 @@ Package author states it delivers 3x to 4x better perfomance than standard net/h
 See this [Google Groups discussion](https://groups.google.com/forum/m/#!topic/golang-nuts/OaQu4QezAr0/discussion) with the author.
 
 ---
+
 ### A little smell of **net/http**
 
 ```go
@@ -121,9 +122,9 @@ log.Fatal(http.ListenAndServe(":8080", nil))
 
 --- 
 
-### Building the first net/http example
+#### Building the first net/http example
 
-Let's create an empty directory (name it as you wish). Inside it create our first Go source named *basichttp.go* containing the following code:
+<small>Let's create an empty directory (name it as you wish). Inside it create our first Go source named *basichttp.go* containing the following code:</small>
 
 ```go
 package main
@@ -141,7 +142,7 @@ http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
 
-To run it justo do:
+<small>To run it justo do:</small>
 
 > go build basichttp.go
 > ./basichttp
