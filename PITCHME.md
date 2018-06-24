@@ -153,7 +153,7 @@ func main() {
 > ./basichttp
 ```
 
----?image=assets/img/output_basic.png
+---?image=assets/img/output_basic.png&position=bottom 50px right 100px&size=auto 45%
 
 #### Running first example
 
