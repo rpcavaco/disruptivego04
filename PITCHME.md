@@ -157,6 +157,6 @@ func main() {
 
 #### Running first example
 
-</small>Posting http://localhost:8080 on a browser's address bar, you should get something as the image shows.</small>
+<small>Posting http://localhost:8080 on a browser's address bar, you should get something as the image shows.</small>
 
-</small>Our first Golang web server is running!</small>
+<small>Our first Golang web server is running!</small>
