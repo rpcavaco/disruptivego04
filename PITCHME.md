@@ -48,7 +48,7 @@ We may try to get something out of Python 3 or, we are just in time to give new 
 
 <small>Where should we look for it?</small>
 
----?image=assets/fortunes_fasthttp_light.png&size=auto 75%
+---?image=assets/img/fortunes_fasthttp_light.png&size=auto 75%
 
 ## Some benchmarking
 
@@ -57,7 +57,7 @@ Techempower.com is my favorite benchmark
 Results available at
 https://www.techempower.com/benchmarks/
 
----?image=assets/fortunes_fasthttp.png&position=bottom 50px right 100px&size=auto 45%
+---?image=assets/img/fortunes_fasthttp.png&position=bottom 50px right 100px&size=auto 45%
 
 Looking at its results (May 2017) I first saw Go as a top performing language.<br><br>
 
@@ -153,10 +153,10 @@ func main() {
 > ./basichttp
 ```
 
----
+---?image=assets/img/output_basic.png
 
-### Running first example
+#### Running first example
 
-</small>Posting http://localhost:8080 on a browser's address bar, you should get something as this:</small>
+</small>Posting http://localhost:8080 on a browser's address bar, you should get something as the image shows.</small>
 
-![Outuput of net/http example](/assets/img/output_basic.png)
+</small>Our first Golang web server is running!</small>
