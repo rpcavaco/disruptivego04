@@ -12,11 +12,11 @@ In order to reproduce code examples, you should have installed on your system:
 - fasthttp library from Aliaksandr Valialkin
 - Redis, an in-memory datastructure store to use as our REST API backend
 
- 
+
  Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](https://redis.io/).
- 
+
  Fasthttp library available as GitHub go repository in [https://github.com/valyala/fasthttp](https://github.com/valyala/fasthttp).
- 
+
 To install it, execute this command line (after Go's installation):
 
 ```
@@ -120,7 +120,7 @@ log.Fatal(http.ListenAndServe(":8080", nil))
 
 <small>*Handle* and *HandleFunc* are two different ways of automatically adding handler functions to the *DefaultServeMux* multiplexer</small>
 
---- 
+---
 
 #### Building the first net/http example
 
@@ -133,17 +133,20 @@ import (
 	"fmt"
 	"net/http"
 	"html"
+	"log"
 )
 
-http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
-})
+func main() {
+	http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
+	})
 
-log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}
 ```
 ---
 
-To run the previous code, justo do:</small>
+<small>To run the previous code, justo do:</small>
 
 ```
 > go build basichttp.go
@@ -152,3 +155,8 @@ To run the previous code, justo do:</small>
 
 ---
 
+### Running first example
+
+</small>Posting http://localhost:8080 on a browser's address bar, you should get something as this:</small>
+
+![Outuput of net/http example](/assets/img/output_basic.png)
