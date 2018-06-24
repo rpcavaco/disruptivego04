@@ -12,16 +12,17 @@ In order to reproduce code examples, you should have installed on your system:
 - fasthttp library from Aliaksandr Valialkin
 - Redis, an in-memory datastructure store to use as our REST API backend
 
- <small>Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](https://redis.io/).</small>
+---
 
-<small>Fasthttp library available as GitHub go repository in [https://github.com/valyala/fasthttp](https://github.com/valyala/fasthttp).</small>
+Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](https://redis.io/).
 
-<small>To install it, execute this command line (after Go's installation):</small>
+Fasthttp library available as GitHub go repository in [https://github.com/valyala/fasthttp](https://github.com/valyala/fasthttp)
+
+To install it, execute this command line (after Go's installation):
 
 ```
 go get -u github.com/valyala/fasthttp
 ```
-
 
 ---
 
