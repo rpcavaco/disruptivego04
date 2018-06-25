@@ -167,6 +167,8 @@ Our first Golang web server is running!
 
 ---
 
+#### A simple HTTP server on *fasthttp*
+
 ```go
 package main
 
@@ -191,7 +193,14 @@ func main() {
 		log.Fatalf("Error in ListenAndServe: %s", err)
 	}
 }
+```
+@[1-9](Define package and imports -- including Aleksandr's library)
+@[11-13](Get command line argument containing TCP port to use, default 8080)
+@[15-23](*main* function)
 
+---
+
+```go
 func requestMux(ctx *fasthttp.RequestCtx) {
 	path := ctx.Path()
 	switch string(path) {
