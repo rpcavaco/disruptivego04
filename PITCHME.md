@@ -271,7 +271,8 @@ Full example source available in [rpcavaco/disruptivego04/exercises](https://git
 
 Let's expand the previous example to build a very simple REST API.
 
-It would be nicer if we achieve some server persistence for information items bouncing from client to server and back.
+<small>It would be nicer if we achieve some server persistence for information items bouncing from client to server and back.</small>
+
 We'll use here Redis an in memory key valur store very easy to use.
 
 ---?image=assets/img/redis_downloads.png&position=bottom 20px right 100px&size=auto 35%
@@ -279,3 +280,5 @@ We'll use here Redis an in memory key valur store very easy to use.
 #### A fresh REDIS installation
 
 In case you haven't done it previously, now is the time to have a REDIS server installed in your system.
+
+[redis.io/download](https://redis.io/download)
