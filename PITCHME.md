@@ -163,4 +163,45 @@ Our first Golang web server is running!
 
 ---
 
-### Let's go faster
+### Now, let's go a little faster
+
+---
+
+```go
+package main
+
+import (
+	"flag"
+	"fmt"
+	"log"
+
+	"github.com/valyala/fasthttp"
+)
+
+var (
+	addr     = flag.String("addr", ":8080", "TCP address to listen to")
+)
+
+func main() {
+	flag.Parse()
+
+	h := requestMux
+
+	if err := fasthttp.ListenAndServe(*addr, h); err != nil {
+		log.Fatalf("Error in ListenAndServe: %s", err)
+	}
+}
+
+func requestMux(ctx *fasthttp.RequestCtx) {
+	path := ctx.Path()
+	switch string(path) {
+		case "/hello":
+			helloHandler(ctx)
+		case "/raw":
+			rawHandler(ctx)
+		default:
+			fmt.Fprintf(ctx, "HTTP not found: %s", ctx.Path())
+			ctx.SetContentType("text/plain; charset=utf8")
+	}
+}
+```
