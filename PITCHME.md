@@ -255,7 +255,7 @@ func rawHandler(ctx *fasthttp.RequestCtx) {
 
 ---
 
-##### The handlers
+##### Testing
 
 Full example source available in [rpcavaco/disruptivego04/exercises](https://github.com/rpcavaco/disruptivego04/exercises/basicfhttp.go)
 
@@ -266,3 +266,16 @@ Full example source available in [rpcavaco/disruptivego04/exercises](https://git
 > ./basicfhttp
 ```
 ---
+
+#### A REST API example
+
+Let's expand the previous example to build a very simple REST API.
+
+It would be nicer if we achieve some server persistence for information items bouncing from client to server and back.
+We'll use here Redis an in memory key valur store very easy to use.
+
+---?image=assets/img/redis_downloads.png&position=bottom 20px right 100px&size=auto 35%
+
+#### A fresh REDIS installation
+
+In case you haven't done it previously, now is the time to have a REDIS server installed in your system.
