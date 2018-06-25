@@ -2,6 +2,7 @@
 
 ## Building a REST API with fasthttp (GO#04)
 
+<small>This presentation and exercise code available in GitHub repo [rpcavaco/disruptivego04](https://github.com/rpcavaco/disruptivego04)</small>
 ---
 
 ## Requirements
@@ -198,7 +199,7 @@ func main() {
 @[11-13](Get command line argument containing TCP port to use, default 8080)
 @[15-23](*main* function)
 @[16](Actual command line argument parsing)
-@[18-22](defining ListenAndServe, similarly to net/http's)
+@[18-22](Defining *ListenAndServe*, similarly to net/http's)
 
 ---
 
@@ -251,3 +252,17 @@ func rawHandler(ctx *fasthttp.RequestCtx) {
 
 @[1-16](For "/hello")
 @[18-23](For "/raw")
+
+---
+
+##### The handlers
+
+Full example source available in [rpcavaco/disruptivego04/exercises](https://github.com/rpcavaco/disruptivego04/exercises/basicfhttp.go)
+
+<small>To run the previous code, justo do:</small>
+
+```
+> go build basicfhttp.go
+> ./basicfhttp
+```
+---
