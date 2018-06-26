@@ -11,7 +11,10 @@ In order to reproduce code examples, you should have installed on your system:
 
 - Go
 - fasthttp library from Aliaksandr Valialkin
+- radix.v2 or other Redis Go Client
 - Redis, an in-memory datastructure store to use as our REST API backend
+
+<small>We can use a a Redis cloud server - like the ones available from [Redis Labs](https://redislabs.com/)</small>
 
 ---
 
@@ -19,12 +22,19 @@ Go can be dowloaded from [here](https://golang.org/dl/), and Redis from [here](h
 
 Fasthttp library available as GitHub go repository in [https://github.com/valyala/fasthttp](https://github.com/valyala/fasthttp)
 
-To install it, execute this command line (after Go's installation):
+<small>To install it, execute this command line (after Go's installation):</small>
 
 ```
 go get -u github.com/valyala/fasthttp
 ```
 
+Redis Go client available as GitHub go repository in [https://github.com/mediocregopher/radix.v2](https://github.com/mediocregopher/radix.v2)
+
+<small>To install it, execute this command line:</small>
+
+```
+go get github.com/mediocregopher/radix.v2
+```
 ---
 
 ## Why use Golang to program HTTP services?
@@ -267,13 +277,13 @@ Full example source available in [rpcavaco/disruptivego04/exercises](https://git
 ```
 ---
 
-#### A REST API example
+### A REST API example
 
 Let's expand the previous example to build a very simple REST API.
 
 <small>It would be nicer if we achieve some server persistence for information items bouncing from client to server and back.</small>
 
-We'll use here Redis an in memory key valur store very easy to use.
+We'll use here Redis, an in memory key-value store very easy to use.
 
 ---?image=assets/img/redis_downloads.png&position=bottom 20px right 100px&size=auto 35%
 
@@ -282,3 +292,5 @@ We'll use here Redis an in memory key valur store very easy to use.
 In case you haven't done it previously, now is the time to have a REDIS server installed in your system.
 
 [redis.io/download](https://redis.io/download)
+
+</small>You can use a cloud-based Redis server instead</small>
