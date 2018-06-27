@@ -295,3 +295,45 @@ In case you haven't done it previously, now is the time to have a REDIS server i
 
 
 <small>You can use a cloud-based Redis server instead</small>
+
+---
+
+#### REST API
+
+Initialization
+
+<small>Complete example code in [exercises/restapi.go](https://github.com/rpcavaco/disruptivego04/exercises/restapi.go)</small>
+
+```go
+package main
+
+import (
+	"flag"
+	"fmt"
+	"log"
+	"strings"
+	"strconv"
+	"encoding/json"
+
+	"github.com/valyala/fasthttp"
+	"github.com/mediocregopher/radix.v2/redis"
+)
+
+var (
+	addr     = flag.String("addr", ":8080", "TCP address to listen to")
+)
+
+func main() {
+	flag.Parse()
+
+	h := requestMux
+
+	if err := fasthttp.ListenAndServe(*addr, h); err != nil {
+		log.Fatalf("Error in ListenAndServe: %s", err)
+	}
+}
+```
+
+@[1-13](Define package and imports -- including Aleksandr's library)
+@[15-20](Parsing command line parameter -- TCP port)
+@[22-27](setting and starting the server)
