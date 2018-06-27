@@ -341,3 +341,33 @@ func main() {
 @[1-13](Define package and imports -- including Aleksandr's library)
 @[15-20](Parsing command line parameter -- TCP port)
 @[22-27](setting and starting the server)
+
+---
+
+##### Multiplexer, handlers
+
+```go
+func requestMux(ctx *fasthttp.RequestCtx) {
+
+	path := string(ctx.Path())
+
+	switch {
+		case strings.Contains(path, "/docs"):
+			docsHandler(ctx)
+		case strings.Contains(path, "/test"):
+			testHandler(ctx)
+		default:
+			ctx.Error(fmt.Sprintf("HTTP not found: %s", ctx.Path()), fasthttp.StatusNotFound)
+	}
+}
+
+func testHandler(ctx *fasthttp.RequestCtx) {
+
+	fmt.Fprintf(ctx, "Request has been started at %s\n", ctx.Time())
+
+	ctx.SetContentType("text/plain; charset=utf8")
+}
+```
+
+@[1-13](DMultiplexer, two handlers: one for "docs" and other for testing)
+@[15-20](Handler for a simple test)

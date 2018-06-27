@@ -40,6 +40,13 @@ func requestMux(ctx *fasthttp.RequestCtx) {
 	}
 }
 
+func testHandler(ctx *fasthttp.RequestCtx) {
+
+	fmt.Fprintf(ctx, "Request has been started at %s\n", ctx.Time())
+
+	ctx.SetContentType("text/plain; charset=utf8")	
+}
+
 func docsHandler(ctx *fasthttp.RequestCtx) {
 	
 	path := string(ctx.Path())
@@ -163,9 +170,4 @@ func docsHandler(ctx *fasthttp.RequestCtx) {
 	}
 }
 
-func testHandler(ctx *fasthttp.RequestCtx) {
 
-	fmt.Fprintf(ctx, "Request has been started at %s\n", ctx.Time())
-
-	ctx.SetContentType("text/plain; charset=utf8")	
-}
