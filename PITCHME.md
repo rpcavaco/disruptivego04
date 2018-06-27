@@ -293,4 +293,5 @@ In case you haven't done it previously, now is the time to have a REDIS server i
 
 [redis.io/download](https://redis.io/download)
 
-</small>You can use a cloud-based Redis server instead</small>
+
+<small>You can use a cloud-based Redis server instead</small>
