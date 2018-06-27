@@ -300,9 +300,13 @@ In case you haven't done it previously, now is the time to have a REDIS server i
 
 #### REST API
 
-Initialization
+Now, go for the final example, a simple REST API
 
 <small>Complete example code in [exercises/restapi.go](https://github.com/rpcavaco/disruptivego04/exercises/restapi.go)</small>
+
+---
+
+##### Initialization
 
 ```go
 package main
